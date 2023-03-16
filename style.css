@@ -1,0 +1,324 @@
+@font-face {
+  font-family: 'Minitel';
+  src: url("Minitel.ttf");
+}
+
+* {
+  font-family: 'Minitel';
+  color: #efeef0;
+}
+
+body {
+  background-color: black;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#screen {
+  background-color: #03012C;
+  border: 1px solid #efeef0;
+  height: 90%;
+  width: 90%;
+}
+
+#screen header {
+  background-color: #efeef0;
+  padding: 2px 0px;
+}
+
+#screen header .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#screen header .arrow p {
+  color: #03012C;
+  margin: 0px;
+}
+
+#screen header .arrow:hover #arrow {
+  -webkit-transform: translateX(-2px);
+          transform: translateX(-2px);
+}
+
+#screen header .selected {
+  background-color: #03012C;
+}
+
+#screen header .selected p {
+  color: #efeef0;
+}
+
+#screen main #head #tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#screen main #head #tag #studio h2 {
+  -webkit-text-stroke: #efeef0 1px;
+  margin: 0px;
+}
+
+#screen main #head #tag #studio h3 {
+  font-size: 18px;
+  opacity: 0.8;
+  font-style: italic;
+  margin: 0px;
+}
+
+#screen main #head #tag #name h1 {
+  color: #FF66D8;
+}
+
+#screen main #head #msg p {
+  font-size: x-large;
+  text-align: center;
+  color: #F7EC59;
+}
+
+#screen main #head #msg p b {
+  color: #FF66D8;
+}
+
+#screen main #selection table {
+  width: 100%;
+}
+
+#screen main #selection table thead td {
+  background-color: #efeef0;
+  color: #03012C !important;
+}
+
+#screen main #selection table tr td:nth-of-type(2) {
+  color: #FF66D8;
+}
+
+#screen main #selection table .selected td {
+  color: #03012C;
+  background-color: #92DCE5;
+}
+
+#screen main #selection table .selected td:nth-of-type(2) {
+  color: #03012C;
+  background-color: #FF66D8;
+}
+
+#screen main #recherche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#screen main #recherche h2 {
+  font-size: xx-large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#screen main #recherche h2 .blue {
+  color: #92DCE5;
+}
+
+#screen main #recherche h2 .red {
+  color: #FF66D8;
+}
+
+#screen main #recherche h2 .yellow {
+  color: #F7EC59;
+}
+
+#screen main #recherche h2 .green {
+  color: #78ff66;
+}
+
+#screen main #recherche #searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#screen main #recherche #searchBar p {
+  margin: 0px;
+  margin-right: 20px;
+}
+
+#screen main #recherche #searchBar #input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#screen main #recherche #searchBar .selected {
+  background-color: #efeef0;
+  color: #03012C;
+}
+
+#screen main #recherche #searchBar .selected div {
+  color: #03012C;
+}
+
+#screen main #recherche #searchBar #button {
+  margin-left: 20px;
+}
+
+#screen #pageSelect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 5px;
+}
+
+#screen #pageSelect .selected {
+  background-color: #efeef0;
+  color: #03012C;
+}
+
+#screen #rose pre {
+  font-size: 50%;
+}
+
+#screen footer {
+  background-color: #92DCE5;
+  border-top: solid 1px #efeef0;
+}
+
+#screen footer h3 {
+  color: #FF66D8;
+}
+
+#screen footer p, #screen footer div {
+  color: #03012C;
+}
+
+#screen footer #help {
+  padding: 0px 5px;
+}
+
+#screen footer #help #touchs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#screen footer #help #touchs div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#screen footer #help #touchs div #enter {
+  background-image: url("img/ENTREE.png");
+  background-size: cover;
+  margin-left: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+#screen footer #help #touchs div #up {
+  background-image: url("img/haut.png");
+  background-size: cover;
+  margin-left: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+#screen footer #help #touchs div #down {
+  background-image: url("img/BAS.png");
+  background-size: cover;
+  margin-left: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+#screen footer #credits {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #efeef0;
+}
+
+#screen footer #credits p, #screen footer #credits div {
+  margin: 0px;
+}
+
+#screen footer #credits .selected {
+  color: #efeef0;
+  background-color: #03012C;
+}
+/*# sourceMappingURL=style.css.map */

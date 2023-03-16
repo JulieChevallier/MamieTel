@@ -1,0 +1,237 @@
+﻿@font-face {
+    font-family: 'Minitel';
+    src: url('Minitel.ttf');
+}
+
+$white:#efeef0;
+$black:#03012C;
+$blue:#92DCE5;
+$yellow:#F7EC59;
+$pink : #FF66D8;
+$green : #78ff66;
+
+*{
+    font-family: 'Minitel';
+    color:$white;
+}
+body{
+    background-color: black;
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#screen{
+    background-color: #03012C;
+    border: 1px solid $white;
+    height:90%;
+    width:90%;
+
+    header{
+        
+        background-color: $white;
+        padding: 2px 0px;
+        .arrow{
+            display: flex;
+            flex-direction: row;
+            p{
+                color:$black;
+                margin:0px;
+            }
+            &:hover #arrow{
+                transform: translateX(-2px);
+            }
+        }
+        .selected{
+            background-color: $black;
+            
+            p{
+                color: $white;
+            }
+        }
+    }
+    main{
+        #head{
+            #tag{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                #studio{
+                    h2{
+                       -webkit-text-stroke: $white 1px;
+                        margin:0px;
+                        
+                    }
+                    h3{
+                        font-size:18px;
+                        opacity:0.8;
+                        font-style:italic;
+                        margin:0px;
+                    }
+                }
+                #name{
+                    h1{
+                        color:$pink;
+                    }
+                }
+            }
+            #msg{
+                p{
+                    font-size: x-large;
+                    text-align: center;
+                    color:$yellow;
+                    b{
+                        color:$pink;
+                    }
+                }
+            }
+        }
+        #selection{
+            table{
+                width:100%;
+                thead{
+                    td{
+                        background-color: $white;
+                        color:$black !important;
+                    }
+                }
+                tr{
+                    td:nth-of-type(2){
+                        color:$pink;
+                    }
+                }
+                .selected{
+                    td{
+                        color:$black;
+                        background-color: $blue;
+                    }
+                    td:nth-of-type(2){
+                        color:$black;
+                        background-color: $pink;
+                    }
+                }
+            }
+        }
+        #recherche{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                font-size: xx-large;
+                display: flex;
+                flex-direction: row;
+                .blue{
+                    color:$blue;
+                }
+                .red{
+                    color:$pink;
+                }
+                .yellow{
+                    color:$yellow;
+                }
+                .green{
+                    color:$green;
+                }
+            }
+            #searchBar{
+                display: flex;
+                flex-direction: row;
+                p{
+                    margin: 0px;
+                    margin-right:20px;
+                }
+                #input{
+                    display: flex;
+                    flex-direction: row;
+                }
+                .selected{
+                    background-color: $white;
+                    color:$black;
+                    div{
+                        color: $black;
+                    }
+                }
+                #button{
+                    margin-left:20px;
+                }
+            }
+        }
+    }
+    #pageSelect{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom:5px;
+    }
+    #pageSelect .selected{
+        background-color: $white;
+        color:$black;
+    }
+    #rose{
+        pre{
+            font-size:50%;
+        }
+    }
+    footer{
+        background-color: $blue;
+        border-top:solid 1px $white;
+        h3{
+            color:$pink;
+        }
+        p,div{
+            color:$black;
+        }
+        #help{
+            padding:0px 5px;
+            #touchs{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    #enter{
+                        background-image: url('img/ENTREE.png');
+                        background-size: cover;
+                        margin-left: 5px;
+                        height:30px;
+                        width: 30px;
+                    }
+                    #up{
+                        background-image: url('img/haut.png');
+                        background-size: cover;
+                        margin-left: 5px;
+                        height:30px;
+                        width: 30px;
+                    }
+                    #down{
+                        background-image: url('img/BAS.png');
+                        background-size: cover;
+                        margin-left: 5px;
+                        height:30px;
+                        width: 30px;
+                    }
+                }
+            }
+        }
+        #credits{
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: $white;
+            p,div{
+                margin:0px;
+            }
+            .selected{
+                color:$white;
+                background-color: $black;
+            }
+        }
+    }
+    
+}
