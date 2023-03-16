@@ -1,6 +1,6 @@
 # MamieTel
 
-MamieTel is a website developed for the [`Nuit de l'Info`](https://www.nuitdelinfo.com/) event in collaboration with Tristan-Mihai Radulescu. The goal of the project was to gamify a website adapted for elderly people.
+MamieTel is a website developed for the [`Nuit de l'Info`](https://www.nuitdelinfo.com/) event in collaboration with [Tristan-Mihai Radulescu](https://github.com/Milou666). The goal of the project was to gamify a website adapted for elderly people.
 
 We decided to create a website inspired by the Minitel, an early French computer network that was widely used in the 1980s and 1990s. The website offers a simple and intuitive interface that is easy to navigate for seniors.
 
